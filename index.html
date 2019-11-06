@@ -10,16 +10,20 @@
 </head>
 <body>
  <div id="global">
- 		<div id="fixed">
 				 <div id="navegacion">
-							<nav>
-							<a href="#">INICIO</a>
-				    		<a id="labanda" href="#seccion1">LA BANDA
-				    		<a href="#seccion2">GALERIA</a>
-				    		<a href="#seccion3">DISCOGRAFIA</a>
-				    		<a href="#seccion4">NOTICIAS</a>
-				    		<a href="#contacto">CONTACTO</a>
-				    		</nav>
+							<nav class="nav">
+								<ul class="menu">
+									<li><a href="#">INICIO</a></li>
+									<li><a href="#seccion1">LA BANDA</a>
+											 	<ul class="sub">
+											    	<li><a href="#seccion2">GALERIA</a></li>
+											    	<li><a href="#seccion3">DISCOGRAFIA</a></li>
+											 	</ul>
+									</li>
+									<li><a href="#seccion4">NOTICIAS</a></li>
+									<li><a href="#contacto">CONTACTO</a></li>
+								</ul>
+							</nav>
 				 </div>
 				 <div id="buscador">
 				 			<form action="" method="POST" enctype="" style="text-align: right;">
@@ -27,7 +31,6 @@
 							<input type="submit" value="Search" id="boton2">
 				        	</form>
 				 </div>
-		</div>
 		 <div id="cabecera">
 					<div>
 						<h1 id="mix">MIX</h1>
@@ -108,7 +111,7 @@
 		 </div>
 		 <div id="seccion4">
 		 			<div>
-						<h2 id="titular">Novedades</h2>
+						<h2 id="titular">Noticias</h2>
 					</div>
 					<div id="news">
 						<p><ion-icon  class="bug" name="bug"></ion-icon> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, quia recusandae dolor cum, eveniet voluptate itaquevoluptatibus iure perspiciatis sequi quisquam inventore. Necessitatibus quasi voluptatem iusto, ea suscipit blanditiisab architecto, eveniet autem dolore fugiat laborum optio dicta in. Eligendi harum repellendus amet provident placeat quas distinctio neque dolores magni!</p>
