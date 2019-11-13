@@ -1,44 +1,51 @@
-<!DOCTYPE html> <!-- SIN ESTO, NO RECONOCE html5-->
-<html lang="es">
+<!DOCTYPE html>
+<html>
 <head>
- <meta charset="utf-8" />
- <link rel="stylesheet" href="css/estilos.css" type="text/css" media="all">
- <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900&display=swap" rel="stylesheet">
- <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
- <title>nueva web</title>
- <!-- Insertar aquí mas Metatags-->
+	<title>MIX</title>
+	<meta charset="utf-8" />
+ 	<link rel="stylesheet" href="estilos.css" type="text/css" media="all">
+ 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900&display=swap" rel="stylesheet">
+ 	<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </head>
 <body>
- <div id="global">
-				 <div id="navegacion">
-							<nav class="nav">
-								<ul class="menu">
+	
+<div class=”contenedor”>
+
+<!----------------------  	HEADER	 ----------------------->
+	    <div class="header">
+	    	<div class="fixed">
+	    		<div id="navegacion">
+				    		<nav class="nav">
+				    			<ul class="menu">
 									<li><a href="#">INICIO</a></li>
-									<li><a href="#seccion1">LA BANDA</a>
-											 	<ul class="sub">
-											    	<li><a href="#seccion2">GALERIA</a></li>
-											    	<li><a href="#seccion3">DISCOGRAFIA</a></li>
-											 	</ul>
-									</li>
+									<li><a href="#seccion1">BANDA</a></li>
+									<li><a href="#seccion2">GALERIA</a></li>
+									<li><a href="#seccion3">DISCOGRAFIA</a></li>
 									<li><a href="#seccion4">NOTICIAS</a></li>
 									<li><a href="#contacto">CONTACTO</a></li>
 								</ul>
 							</nav>
-				 </div>
-				 <div id="buscador">
-				 			<form action="" method="POST" enctype="" style="text-align: right;">
+				</div>
+				<div id="buscador">
+				 			<form action="" method="POST" enctype="" style="align-self: center;">
 							<input type="text" name="buscador" placeholder="buscador">
 							<input type="submit" value="Search" id="boton2">
 				        	</form>
-				 </div>
-		 <div id="cabecera">
-					<div>
-						<h1 id="mix">MIX</h1>
-						<h2 id="band">Rock Band</h2>
-					</div>
-		 </div>
-		 <div id="seccion1">
-					<div>
+				</div>
+			</div>
+		</div>
+<!----------------------  	FIN HEADER	 ----------------------->
+<!----------------------  	IMAGEN HEADER	 ----------------------->
+
+	    <div class="elemento" id="cabecera">
+					<h1 id="mix">MIX</h1>
+					<h2 id="band">Rock Band</h2>
+	    </div>
+<!----------------------  	FIN IMAGEN HEADER	 ----------------------->
+<!----------------------  	LA BANDA	 ----------------------->
+	    <div class="elemento">
+	    	<div id="seccion1">
+					<div class="grow" style="flex-basis: 100%;">
 						<h2 id="titular">La Banda</h2>
 					</div>
 					<div id="nota">
@@ -46,27 +53,34 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam libero quo itaque veritatis at amet, cupiditate illo repellat neque sed eaque laudantium, exercitationem incidunt dolores aliquid eum? A nesciunt tempora asperiores voluptas minima! Minus delectus voluptas quod ducimus iure? Voluptatibus sequi numquam eos, perspiciatis necessitatibus iste doloribus totam eum optio!</p>
 					</div>
 					<div id="grupo">
-		 			<div>
-		 			<img style="width: 100%;" src="img/grupo.jpg" alt="">
+		 					<div>
+		 						<img style="width: 80%; padding: 10px;" src="img/grupo.jpg" alt="">
+		 					</div>
 		 			</div>
-		 </div>
-		 </div>
-		 
-		 <div id="seccion2">
-		 			<div>
+		 	</div>
+	    </div>
+<!----------------------  	FIN LA BANDA	 ----------------------->
+<!----------------------  	GALERIA	 ----------------------->
+	    <div class="elemento">
+	    	<div id="seccion2">
+		 			<div class="grow" style="flex-basis: 100%;">
 						<h2 id="titular">Galeria</h2>
 					</div>
-					<div>
-						<img style="width: 30%; padding: 10px;" src="img/grupo.jpg" alt="">
-						<img style="width: 30%; padding: 10px;" src="img/grupo.jpg" alt="">
-						<img style="width: 30%; padding: 10px;" src="img/grupo.jpg" alt="">
-						<img style="width: 30%; padding: 10px;" src="img/grupo.jpg" alt="">
-						<img style="width: 30%; padding: 10px;" src="img/grupo.jpg" alt="">
-						<img style="width: 30%; padding: 10px;" src="img/grupo.jpg" alt="">
+					<div class="imagenes">
+						<img src="img/grupo.jpg" alt="">
+						<img src="img/grupo.jpg" alt="">
+						<img src="img/grupo.jpg" alt="">
+						<img src="img/grupo.jpg" alt="">
+						<img src="img/grupo.jpg" alt="">
+						<img src="img/grupo.jpg" alt="">
 					</div>
-		 </div>
-		 <div id="seccion3">
-		 			<div>
+		 	</div>
+	    </div>
+<!----------------------  	FIN GALERIA	 ----------------------->
+<!----------------------  	DISCOGRAFIA	 ----------------------->
+	    <div class="elemento">
+	    	<div id="seccion3">
+		 			<div class="grow" style="flex-basis: 100%;">
 						<h2 id="titular">Discografía</h2>
 					</div>
 					<div id="disco1">
@@ -109,8 +123,12 @@
 						</div>
 					</div>
 		 </div>
-		 <div id="seccion4">
-		 			<div>
+	    </div>
+<!----------------------  	FIN DISCOGRAFIA	 ----------------------->
+<!----------------------  	NOTICIAS	 ----------------------->
+	    <div class="elemento">
+	    	<div id="seccion4">
+		 			<div class="grow" style="flex-basis: 100%;">
 						<h2 id="titular">Noticias</h2>
 					</div>
 					<div id="news">
@@ -118,15 +136,18 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, officiis magnam incidunt eaque, suscipit iste deleniti quae minus est corrupti eos, illum enim fugit natus, vero consequuntur itaque dicta. Temporibus rem aperiam odit ad recusandae facilis sint voluptate placeat minus.</p>
 					</div>
 					<div id="video">
-						<video width="260" controls autoplay="">
+						<video width="100%" controls autoplay="">
   						<source src="mp4/mixband.mp4" type="video/mp4">
   						Tu navegador no implementa el elemento <code>video</code>.
 						</video>
 					</div>
 		 </div>
-
-		 <div id="contacto">
-		 			<div>
+	    </div>
+<!----------------------  	FIN NOTICIAS	 ----------------------->
+<!----------------------  	CONTACTO	 ----------------------->
+	    <div class="elemento">
+	    	<div id="contacto">
+		 			<div class="grow" style="flex-basis: 100%;">
 						<h2 id="titular">Contacto</h2>
 					</div>
 					<div id="datos" style="text-align: center;">
@@ -158,7 +179,12 @@
 		            	<a href="https://www.instagram.com/?hl=es-la"><ion-icon class="instagram" name="logo-instagram"></ion-icon></a>
 		            	<a href="https://www.youtube.com/?gl=AR&hl=es-419"><ion-icon class="youtube" name="logo-youtube"></ion-icon></a>
 					</div>
-		 </div>
- </div>
+		 	</div>
+	    </div>
+<!----------------------  	FIN CONTACTO	 ----------------------->
+
+</div>
+
+
 </body>
 </html>
