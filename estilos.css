@@ -14,6 +14,9 @@ body {
     justify-content: center;
     margin: 0 auto;
 }
+.grow{
+	flex-basis: 100%;
+}
 /*--------------------------- 	HEADER	 -----------------------------------*/
 .header{
 	width: 100%;
@@ -83,6 +86,16 @@ body {
 			 display: flex;
 			 flex-wrap: wrap;
 			}
+			#botBuscar{
+				width: 300px;
+			}
+			#boton2{
+			 color: #000000;
+			 background-color: #fee300;
+			}
+			#boton2:hover{
+				
+			}
 			a{
 			color: #fee300;
 			text-decoration: none;
@@ -95,7 +108,6 @@ body {
  width:800px;
  height: 400px;
  background-image: url("img/cabecera.jpg");
- background-position: top center;
  background-repeat: no-repeat; 
  background-size: cover;
  text-align: center;
@@ -137,7 +149,7 @@ body {
 				margin: 5px;
 				font-size:25px;
 				color: #fee300;
-				flex-basis: 100%;
+
 			}
 			h3{
 				font-family: 'Poppins',san serif;
@@ -166,7 +178,7 @@ body {
 			 text-align: center;
 			 background-color: #000000;
 			 flex-wrap: wrap;
-			 align-items:flex-end;
+			 align-self: center;
 			}
 /*-------------------------------------*/
 /*------------------GALERIA-------------------*/
@@ -409,4 +421,194 @@ animation: swing 1s ease;
 animation-iteration-count: 1;
 }
 /*===================== FIN Animacion Boton ===================*/
+
+
+/*------------------RESPONSIVE-------------------*/
+/* Mobile Styles */
+@media only screen and (max-width: 375px) {
+  body {
+    background-color: #F09A9D; /* Red */
+  }
+  .elemento{
+    width:375px;
+  }
+  .header{
+  	width: 375px;
+  }
+  #navegacion {
+			 width:70%;
+			 font-size: 12px;
+			 word-spacing: 5px;
+			 margin-left: 10px;
+			 margin-right: 20px;
+  }
+  .fixed{
+  	width: 100%;
+  }
+  #nav{
+  	margin: 0px;
+  }
+  #cabecera{
+  	background-size: 375px;
+  	height: 145px;
+  	margin-top: 30px;
+  }
+  #mix{
+  	width: 375px;
+  	font-size: 50px;
+  	line-height: 30px;
+  	margin-top: 40px;
+  	margin-bottom: 5px;
+  }
+  #band{
+  	width: 375px;
+  	font-size: 20px;
+  	margin-bottom: 5px;
+  }
+  #seccion1{
+  	width: 100%;
+  }
+  #titular{
+  	flex-basis: 96%;
+  	font-size: 20px;
+  	padding: 0;
+  }
+  #nota{
+  	flex-basis: 100%;
+  	margin: 5px;
+  	padding: 5px;
+  }
+  h3{
+  	font-size: 16px;
+  	margin: 5px;
+  	padding: 5px;
+  }
+  p{
+  	font-size: 12px;
+  	margin: 5px;
+  	padding: 5px;
+  }
+  #seccion2{
+  	width: 100%;
+  }
+  .imagenes {
+    justify-content: none;
+    margin: 5px;
+  }
+  #seccion3{
+  	width: 100%;
+  }
+  img{
+	width: 200px;
+	margin: 10px;
+	align-self: center;
+  }
+  #seccion3 #disco1 {
+    width: 50%;
+    align-self: center;
+    margin-right: 10px;
+  }
+  #seccion3 #disco2 {
+    width: 50%;
+    align-self: center;
+    margin-right: 10px;
+  }
+  #seccion3 #disco3 {
+    width: 50%;
+    align-self: center;
+    margin-right: 10px;
+  }
+  #list1 {
+    margin-left: 0px;
+    width: 180px;
+    font-size: 12px;
+  }
+  #list2 {
+    margin-left: 0px;
+    width: 180px;
+    font-size: 12px;
+  }
+  #list3 {
+    margin-left: 0px;
+    width: 180px;
+    font-size: 12px;
+  }
+  #seccion4{
+  	width: 100%;
+  }
+  #news{
+  	flex-basis: 100%;
+  	margin: 5px;
+  	padding: 5px;
+  }
+  #video{
+  	flex-basis: 100%;
+  	margin: 5px;
+  	padding: 5px;
+  }
+  #contacto{
+  	width: 100%;
+  }
+  #redes{
+  	width: 100%;
+  }
+
+}
+/* Tablet Styles */
+@media only screen and (min-width: 376px) and (max-width: 768px) {
+  body {
+    background-color: #F5CF8E; /* Yellow */
+  }
+  .elemento{
+    width:768px;
+  }
+  .header{
+  	width: 768px;
+  }
+  #navegacion {
+			 width:60%;
+			 font-size: 12px;
+			 word-spacing: 5px;
+			 margin-left: 10px;
+			 margin-right: 20px;
+  }
+  #cabecera{
+		  	 width:768px;
+			 height: 300px;
+  }
+  .fixed{
+  	width: 100%;
+  }
+  #nav{
+  	margin: 0px;
+  }
+  p{
+  	font-size: 12px;
+  }
+  #list1 {
+    font-size: 12px;
+  }
+  #list2 {
+    font-size: 12px;
+  }
+  #list3 {
+    font-size: 12px;
+  }
+  #contacto{
+  	width: 768px;
+  }
+  #redes{
+  	width: 768px;
+  }
+
+}
+/* Desktop Styles */
+@media only screen and (min-width: 769px) {
+  body {
+    background-color: #000000; /* Black */
+  }
+}
+/*------------------FIN RESPONSIVE-------------------*/
+
+/*---------------------------------------------*/
 
