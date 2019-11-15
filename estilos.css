@@ -137,7 +137,6 @@ body {
 /*--------------------LABANDA----------------------*/
 #seccion1 {
  width:800px;
- height: 400px;
  background-color: #000000;
  display: flex;
  flex-wrap: wrap;
@@ -436,7 +435,7 @@ animation-iteration-count: 1;
   	width: 375px;
   }
   #navegacion {
-			 width:70%;
+			 width:49%;
 			 font-size: 12px;
 			 word-spacing: 5px;
 			 margin-left: 10px;
@@ -445,11 +444,15 @@ animation-iteration-count: 1;
   .fixed{
   	width: 100%;
   }
+  #buscador{
+  	width: 39%;
+  	padding: 20px;
+  }
   #nav{
   	margin: 0px;
   }
   #cabecera{
-  	background-size: 375px;
+  	width: 375px;
   	height: 145px;
   	margin-top: 30px;
   }
@@ -477,6 +480,10 @@ animation-iteration-count: 1;
   	flex-basis: 100%;
   	margin: 5px;
   	padding: 5px;
+  	height: 200px;
+  }
+  #grupo{
+  	display: none;
   }
   h3{
   	font-size: 16px;
