@@ -1,5 +1,5 @@
 body {
- background-color: #ffffff;
+ background-color: #000000;
  margin: 0;
 }
 .contenedor{
@@ -13,9 +13,6 @@ body {
     display: flex;
     justify-content: center;
     margin: 0 auto;
-}
-.grow{
-	flex-basis: 100%;
 }
 /*--------------------------- 	HEADER	 -----------------------------------*/
 .header{
@@ -86,16 +83,6 @@ body {
 			 display: flex;
 			 flex-wrap: wrap;
 			}
-			#botBuscar{
-				width: 300px;
-			}
-			#boton2{
-			 color: #000000;
-			 background-color: #fee300;
-			}
-			#boton2:hover{
-				
-			}
 			a{
 			color: #fee300;
 			text-decoration: none;
@@ -108,6 +95,7 @@ body {
  width:800px;
  height: 400px;
  background-image: url("img/cabecera.jpg");
+ background-position: top center;
  background-repeat: no-repeat; 
  background-size: cover;
  text-align: center;
@@ -148,7 +136,7 @@ body {
 				margin: 5px;
 				font-size:25px;
 				color: #fee300;
-
+				flex-basis: 100%;
 			}
 			h3{
 				font-family: 'Poppins',san serif;
@@ -177,7 +165,7 @@ body {
 			 text-align: center;
 			 background-color: #000000;
 			 flex-wrap: wrap;
-			 align-self: center;
+			 align-items:flex-end;
 			}
 /*-------------------------------------*/
 /*------------------GALERIA-------------------*/
@@ -195,7 +183,65 @@ body {
 			img{
 				width: 30%;
 			}
-			
+			.img1{
+				filter: grayscale(100%);
+			}
+			.img1:hover {
+				filter: grayscale(0%);
+			}
+			.img2{
+				filter: grayscale(100%);
+			}
+			.img2:hover {
+				filter: grayscale(0%);
+			}
+			.img3{
+				filter: grayscale(100%);
+			}
+			.img3:hover {
+				filter: grayscale(0%);
+			}
+			.img4{
+				filter: grayscale(100%);
+			}
+			.img4:hover {
+				filter: grayscale(0%);
+			}
+			.img5{
+				filter: grayscale(100%);
+			}
+			.img5:hover {
+				filter: grayscale(0%);
+			}
+			.img6{
+				filter: grayscale(100%);
+			}
+			.img6:hover {
+				filter: grayscale(0%);
+			}
+
+#carouselExampleIndicators{
+	display: none;
+}
+/*---------------- texto sobre el slider ---------------------*/			
+.textimg h5{
+		font-family: 'Poppins',san serif;
+		text-align: center;
+		padding: 2px;
+		margin: 2px;
+		font-size:40px;
+		color: #e4e4e4;
+        }
+.textimg p{
+		font-family: 'Poppins',san serif;
+		text-align: center;
+		padding: 2px;
+		margin: 2px;
+		font-size: 18px;
+		color: #e4e4e4;
+		}
+
+/*---------------- FIN texto sobre el slider ---------------------*/			
 /*-------------------------------------*/
 /*-------------------DISCOGRAFIA------------------*/
 #seccion3 {
@@ -320,7 +366,7 @@ body {
  	margin: 0 auto 0 auto;
  	background-color: #000000;
 }
-			.facebook,.instagram,.twitter,.youtube{
+			.btn--facebook,.btn--twitter,.btn--instagram,.btn--youtube{
 				font-size: 40px;
 				color: white;
 				margin-top: 40px;
@@ -334,6 +380,7 @@ body {
 -webkit-transform: scale(1.3);
 -ms-transform: scale(1.3);
 transform: scale(1.3);
+transition: all .3s;
 }
 /*================= FIN Transicion Titulos =================*/
 
@@ -421,7 +468,6 @@ animation-iteration-count: 1;
 }
 /*===================== FIN Animacion Boton ===================*/
 
-
 /*------------------RESPONSIVE-------------------*/
 /* Mobile Styles */
 @media only screen and (max-width: 375px) {
@@ -453,7 +499,7 @@ animation-iteration-count: 1;
   }
   #cabecera{
   	width: 375px;
-  	height: 145px;
+  	height: 50%;
   	margin-top: 30px;
   }
   #mix{
@@ -498,9 +544,11 @@ animation-iteration-count: 1;
   #seccion2{
   	width: 100%;
   }
-  .imagenes {
-    justify-content: none;
-    margin: 5px;
+  .imagenes{
+  	display: none;
+  }
+  #carouselExampleIndicators{
+  	display: flex;
   }
   #seccion3{
   	width: 100%;
@@ -559,6 +607,13 @@ animation-iteration-count: 1;
   #redes{
   	width: 100%;
   }
+  select {
+  	color: #000000;
+    background-color: #ffffff;
+  }
+  textarea {
+  	width: 300px;
+  }
 
 }
 /* Tablet Styles */
@@ -570,7 +625,7 @@ animation-iteration-count: 1;
     width:768px;
   }
   .header{
-  	width: 768px;
+  	width: 100%;
   }
   #navegacion {
 			 width:60%;
@@ -581,7 +636,7 @@ animation-iteration-count: 1;
   }
   #cabecera{
 		  	 width:768px;
-			 height: 300px;
+			 height: 50%;
   }
   .fixed{
   	width: 100%;
@@ -591,6 +646,9 @@ animation-iteration-count: 1;
   }
   p{
   	font-size: 12px;
+  }
+  #group{
+  	display: none;
   }
   #list1 {
     font-size: 12px;
@@ -607,6 +665,16 @@ animation-iteration-count: 1;
   #redes{
   	width: 768px;
   }
+  select {
+  	color: #000000;
+    background-color: #ffffff;
+  }
+  .imagenes{
+  	display: none;
+  }
+  #carouselExampleIndicators{
+  	display: flex;
+  }
 
 }
 /* Desktop Styles */
@@ -616,6 +684,4 @@ animation-iteration-count: 1;
   }
 }
 /*------------------FIN RESPONSIVE-------------------*/
-
-/*---------------------------------------------*/
 

@@ -5,9 +5,35 @@ body {
   background: #008cba;
   padding: 1rem   0;
   margin: 2rem   0;
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
 
 .header__navigation--secondary {
-  background: #dfe0e0;
-}
+  background: #dfe0e0; }
+
+/* ===================== MAPS ==========================*/
+.btn--facebook {
+  color: #ffffff; }
+
+.btn--facebook:hover {
+  color: #27476E; }
+
+.btn--twitter {
+  color: #ffffff; }
+
+.btn--twitter:hover {
+  color: #0DBEB2; }
+
+.btn--instagram {
+  color: #ffffff; }
+
+.btn--instagram:hover {
+  color: #FFBF00; }
+
+.btn--youtube {
+  color: #ffffff; }
+
+.btn--youtube:hover {
+  color: #DB162F; }
+
+/* ===================== FIN MAPS ==========================*/
+

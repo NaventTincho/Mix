@@ -12,3 +12,45 @@ padding :  1rem   0;
 @extend  .header__navigation;  
 background :  #dfe0e0;
 }
+
+/* ===================== MAPS ==========================*/
+
+$redes: (
+ facebook: #27476E,
+ twitter: #0DBEB2,
+ instagram: #FFBF00,
+ youtube: #DB162F,
+
+);
+
+@each $name-redes, $bgredes in $redes {
+   .btn--#{$name-redes} {
+       color: #ffffff;
+   }
+	
+	.btn--#{$name-redes}:hover {
+       color: $bgredes;
+   }
+
+}
+
+/* ===================== FIN MAPS ==========================*/
+
+$imagenes: (
+ img: filter: grayscale(100%),
+
+);
+
+@each $name-imagenes, $bgimagenes in $imagenes {
+   .hover-#{$name-imagenes} {
+       color: $bgimagenes;
+   }
+	
+	.hover-#{$name-redes}:hover {
+       filter: grayscale(0%);
+   }
+}
+
+
+
+
